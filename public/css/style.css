@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 1;
+   
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+    padding: 1.5rem !important;
+   
+}
+.fa-brands{
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+.main{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  
+}
+.form-control{
+    width: 15rem !important;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.5rem
+}
+/* .card{
+    height: 50rem;
+    object-fit: contain;
+}
+    */
+.cardcard-img-top{
+   border-radius: 2rem;
+} 
+.cardImg{
+    text-decoration: none !important;
+}
+.cardImg:hover{
+    opacity: 0.8;
+   
+}
+.f1{
+    width: 25rem !important;
+}
+.form-control{
+    width: 30rem !important;
+    /* border:1px solid black !important; */
+}
+.cform{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.create{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showCard{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    margin-top:1.5rem ;
+    width: 30rem !important;
+    padding: 1rem;
+}
+.footer{
+    
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 2px;
+    background-color: rgb(160, 158, 158);
+  
+}
+.fi{
+    font-size: 1.25rem;
+}
+.copy{
+    font-size: 1.125rem;
+}
+.showDiv{
+    display: flex;
+    flex-direction: column;
+}
+.reviewCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+.review{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.revireForm{
+    margin-left: 3rem;
+}
+#map{
+    height: 400px;
+    width: 80vh;
+    margin: auto;
+}
+.showMain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.revireForm{
+    width: 100%;
+}
