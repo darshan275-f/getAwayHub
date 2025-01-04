@@ -1,0 +1,21 @@
+<%- layout("/layouts/boilerplate") %>
+
+<h3>GetAwayHub</h3>
+<P><B>Sign Up</B></P>
+<div class="create">
+    <form method="post" action="/signUp" novalidate class="needs-validation">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control col-xs-7" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">UserName</label>
+                <input type="text" class="form-control col-xs-7" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control col-xs-7" id="password" name="password" required>
+                    </div>
+                    <button class="btn btn-outline-success">Sumbit</button>
+            </form>
+            </div>

@@ -1,0 +1,66 @@
+<%- layout("/layouts/boilerplate") %>
+<body>
+
+    <div class="create">
+        <form method="post" action="/listings/edit/<%=list._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="Title1" class="form-label">Title</label>
+                <input type="text" class="form-control col-xs-7" id="Title1" name="listing[title]" placeholder="Enter the Title" value="<%=list.title%>" required>
+              </div>
+        
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="listing[description]" placeholder=" Enter the Description" required><%=list.description%></textarea>
+              </div>
+        
+        
+              <div class="mb-3">
+                <label for="Image1" class="form-label">upload new image</label>
+                <input type="file" class="form-control" id="Image1" aria-describedby="emailHelp" name="listing[image]" >
+              </div>
+
+              <div class="cfrom">
+                <div class="mb-3">
+                    <label for="Price1" class="form-label">Price</label>
+                    <input type="number" class="form-control f1" id="Price1" aria-describedby="emailHelp" name="listing[price]" placeholder="Enter the price per night" value="<%=list.price%>" required>
+                  </div>
+            
+                  <div class="mb-3">
+                    <label for="Location1" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="Location1" aria-describedby="emailHelp"  name="listing[location]" placeholder="Enter the Location" value="<%=list.location%>" required>
+                  </div>
+              </div>
+           
+           
+        
+              <div class="mb-3">
+                <label for="Country1" class="form-label">Country</label>
+                <input type="text" class="form-control" id="Country1" aria-describedby="emailHelp" name="listing[country]" placeholder="Enter the Country" value="<%=list.country%>" required>
+              </div>
+              <button class="btn btn-outline-warning">Edit</button>
+           </form>
+    </div>
+  
+
+
+
+
+
+<!-- 
+    <form method="post" action="/listings/edit/<%=list._id%>?_method=PUT">
+        <input name="listing[title]" type="text" placeholder="Enter the Title" value="<%=list.title%>">
+        <br>
+        <textarea name="listing[description]">
+            <%=list.description %>
+        </textarea>
+        <input name="listing[image]" type="text" placeholder="Enter the url of image" value="<%=list.image%>">
+        <br>
+        <input name="listing[price]" type="text" placeholder="Enter the price" value="<%=list.price%>">
+        <br>
+        <input name="listing[location]" type="text" placeholder="Enter the location" value="<%=list.location%>">
+        <br>
+        <input name="listing[country]" type="text" placeholder="Enter the country" value="<%=list.country%>">
+        <br>
+        <button>Edit</button>
+    </form> -->
+</body>
